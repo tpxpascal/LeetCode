@@ -11,7 +11,10 @@ public class Launcher
 		// twoSum.debug();
 		// AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
 		// addTwoNumbers.debug();
-		LongestSubstringWithoutRepeatingCharacters x = new LongestSubstringWithoutRepeatingCharacters();
-		x.debug();
+		// LongestSubstringWithoutRepeatingCharacters x = new
+		// LongestSubstringWithoutRepeatingCharacters();
+		// x.debug();
+		MedianOfTwoSortedArray y = new MedianOfTwoSortedArray();
+		y.debug();
 	}
 }
