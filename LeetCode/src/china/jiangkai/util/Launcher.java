@@ -14,7 +14,17 @@ public class Launcher
 		// LongestSubstringWithoutRepeatingCharacters x = new
 		// LongestSubstringWithoutRepeatingCharacters();
 		// x.debug();
-		MedianOfTwoSortedArray y = new MedianOfTwoSortedArray();
-		y.debug();
+		// MedianOfTwoSortedArray y = new MedianOfTwoSortedArray();
+		// y.debug();
+		// LongestPalindromicSubstring sub = new LongestPalindromicSubstring();
+		// sub.debug();
+		// ZigZagConversion zzc = new ZigZagConversion();
+		// zzc.debug();
+		// ReverseInteger ri = new ReverseInteger();
+		// ri.debug();
+		// StringToInteger sti = new StringToInteger();
+		// sti.debug();
+		PalindromicNumber pn = new PalindromicNumber();
+		pn.debug();
 	}
 }
