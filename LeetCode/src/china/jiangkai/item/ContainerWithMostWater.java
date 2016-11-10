@@ -10,9 +10,7 @@ public class ContainerWithMostWater
 		{
 			for ( int j = i + 1; j < height.length; j++ )
 			{
-				int area = (j - i)
-						* ((height[ i ] < height[ j ]) ? height[ i ]
-								: height[ j ]);
+				int area = (j - i) * Math.min( height[ i ], height[ j ] );
 				if ( area > result )
 				{
 					result = area;
@@ -42,10 +40,12 @@ public class ContainerWithMostWater
 				1, 1
 		};
 		int[] x = new int[ 15000 ];
+		int[] y = new int[ 15000 ];
 
 		for ( int i = 0; i < 15000; i++ )
 		{
 			x[ i ] = 15000 - i;
+			y[ i ] = i + 1;
 		}
 
 		System.out.println( maxArea( a ) );
@@ -54,6 +54,8 @@ public class ContainerWithMostWater
 		System.out.println( maxArea( d ) );
 		System.out.println( System.currentTimeMillis() );
 		System.out.println( maxArea( x ) );
+		System.out.println( System.currentTimeMillis() );
+		System.out.println( maxArea( y ) );
 		System.out.println( System.currentTimeMillis() );
 	}
 }
