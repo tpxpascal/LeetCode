@@ -4,41 +4,35 @@ public class PalindromicNumber
 {
 	public boolean isPalindrome( int x )
 	{
-		boolean result = false;
+		boolean result = true;
 
-		int value = x;
-		if ( value < 0 )
+		if ( x < 0 )
 		{
 			return false;
 		}
-		int maxSize = 10;
-		int size = 0;
 
-		for ( int i = maxSize; i >= 0; i-- )
+		int highBase = 1000000000; // To improve performance, use magic number.
+		int lowBase = 1;
+		double flag = 1.0 * x / highBase;
+
+		while ( (flag < 1) && (flag > 0) )
 		{
-			double flag = value / Math.pow( 10, i );
-			if ( flag > 1 )
+			flag = flag * 10;
+			highBase = highBase / 10;
+		}
+
+		while ( highBase > lowBase )
+		{
+			int highNum = x / highBase % 10;
+			int lowNum = x / lowBase % 10;
+
+			if ( highNum != lowNum )
 			{
-				size = i;
-				break;
+				return false;
 			}
-		}
 
-		int left = size;
-		int right = 0;
-
-		while ( left > right )
-		{
-			int factor = value % 10;
-			value = (int)((value - (Math.pow( 10, (left - right) ) + 1)
-					* factor) / 10);
-			left--;
-			right++;
-		}
-
-		if ( value >= 0 && value <= 9 )
-		{
-			result = true;
+			highBase = highBase / 10;
+			lowBase = lowBase * 10;
 		}
 
 		return result;
@@ -46,11 +40,11 @@ public class PalindromicNumber
 
 	public void debug()
 	{
-		int a = 1122;
-		int b = -1235321;
-		int c = 234432;
-		int d = 123456;
-		int e = -2147447412;
+		int a = 1910110191;
+		int b = 1122;
+		int c = 0;
+		int d = 12321;
+		int e = 2442;
 
 		System.out.println( isPalindrome( a ) );
 		System.out.println( isPalindrome( b ) );

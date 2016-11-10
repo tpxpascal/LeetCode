@@ -24,7 +24,11 @@ public class Launcher
 		// ri.debug();
 		// StringToInteger sti = new StringToInteger();
 		// sti.debug();
-		PalindromicNumber pn = new PalindromicNumber();
-		pn.debug();
+		// PalindromicNumber pn = new PalindromicNumber();
+		// pn.debug();
+		// RegularExpressionMatching rem = new RegularExpressionMatching();
+		// rem.debug();
+		ContainerWithMostWater cwmw = new ContainerWithMostWater();
+		cwmw.debug();
 	}
 }
