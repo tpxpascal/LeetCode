@@ -21,6 +21,32 @@ public class ContainerWithMostWater
 		return result;
 	}
 
+	public int maxAreaFast( int[] height )
+	{
+		int result = 0;
+
+		for ( int i = 1; i < height.length; i++ )
+		{
+			int upper = height.length - i;
+			int line = 0;
+			for ( int j = 0; j < upper; j++ )
+			{
+				int curLine = Math.min( height[ j ], height[ j + i ] );
+				if ( curLine > line )
+				{
+					line = curLine;
+				}
+			}
+			int area = line * i;
+			if ( area > result )
+			{
+				result = area;
+			}
+		}
+
+		return result;
+	}
+
 	public void debug()
 	{
 		int[] a =
@@ -56,6 +82,16 @@ public class ContainerWithMostWater
 		System.out.println( maxArea( x ) );
 		System.out.println( System.currentTimeMillis() );
 		System.out.println( maxArea( y ) );
+		System.out.println( System.currentTimeMillis() );
+
+		System.out.println( maxAreaFast( a ) );
+		System.out.println( maxAreaFast( b ) );
+		System.out.println( maxAreaFast( c ) );
+		System.out.println( maxAreaFast( d ) );
+		System.out.println( System.currentTimeMillis() );
+		System.out.println( maxAreaFast( x ) );
+		System.out.println( System.currentTimeMillis() );
+		System.out.println( maxAreaFast( y ) );
 		System.out.println( System.currentTimeMillis() );
 	}
 }

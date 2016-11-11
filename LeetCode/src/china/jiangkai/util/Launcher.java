@@ -28,7 +28,15 @@ public class Launcher
 		// pn.debug();
 		// RegularExpressionMatching rem = new RegularExpressionMatching();
 		// rem.debug();
-		ContainerWithMostWater cwmw = new ContainerWithMostWater();
-		cwmw.debug();
+		// ContainerWithMostWater cwmw = new ContainerWithMostWater();
+		// cwmw.debug();
+		// IntegerToRoman itr = new IntegerToRoman();
+		// itr.debug();
+		// RomanToInteger rti = new RomanToInteger();
+		// rti.debug();
+		// LongestCommonPrefix lcp = new LongestCommonPrefix();
+		// lcp.debug();
+		ThreeSum ts = new ThreeSum();
+		ts.debug();
 	}
 }
