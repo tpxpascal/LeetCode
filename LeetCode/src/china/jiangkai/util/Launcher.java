@@ -36,7 +36,17 @@ public class Launcher
 		// rti.debug();
 		// LongestCommonPrefix lcp = new LongestCommonPrefix();
 		// lcp.debug();
-		ThreeSum ts = new ThreeSum();
-		ts.debug();
+		// ThreeSum ts = new ThreeSum();
+		// ts.debug();
+		// ThreeSumClosest tsc = new ThreeSumClosest();
+		// tsc.debug();
+		// LetterCombination lc = new LetterCombination();
+		// lc.debug();
+		// RemoveNthNode rnn = new RemoveNthNode();
+		// rnn.debug();
+		// ValidParentheses vp = new ValidParentheses();
+		// vp.debug();
+		MergeTwoSortedLists mtsl = new MergeTwoSortedLists();
+		mtsl.debug();
 	}
 }

@@ -143,15 +143,15 @@ public class AddTwoNumbers
 
 		return result;
 	}
-}
 
-class ListNode
-{
-	int val;
-	ListNode next;
-
-	ListNode( int x )
+	class ListNode
 	{
-		val = x;
+		int val;
+		ListNode next;
+
+		ListNode( int x )
+		{
+			val = x;
+		}
 	}
 }

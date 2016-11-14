@@ -10,14 +10,14 @@ public class ThreeSum
 		Map< String, Integer > keys = new HashMap< String, Integer >();
 
 		int end1 = nums.length - 2;
+		int end2 = end1 + 1;
+		int end3 = end2 + 1;
 		for ( int i = 0; i < end1; i++ )
 		{
 			int start2 = i + 1;
-			int end2 = end1 + 1;
 			for ( int j = start2; j < end2; j++ )
 			{
 				int start3 = j + 1;
-				int end3 = end2 + 1;
 				int next = -nums[ i ] - nums[ j ];
 				for ( int k = start3; k < end3; k++ )
 				{
