@@ -46,7 +46,11 @@ public class Launcher
 		// rnn.debug();
 		// ValidParentheses vp = new ValidParentheses();
 		// vp.debug();
-		MergeTwoSortedLists mtsl = new MergeTwoSortedLists();
-		mtsl.debug();
+		// MergeTwoSortedLists mtsl = new MergeTwoSortedLists();
+		// mtsl.debug();
+		// GenerateParentheses gp = new GenerateParentheses();
+		// gp.debug();
+		MergeKSortedLists mksl = new MergeKSortedLists();
+		mksl.debug();
 	}
 }
