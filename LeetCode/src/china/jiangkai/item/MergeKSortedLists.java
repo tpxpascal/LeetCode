@@ -18,53 +18,57 @@ public class MergeKSortedLists
 		LinkedList< ListNode > currList = new LinkedList< ListNode >();
 		for ( int i = 0; i < lists.length; i++ )
 		{
-			currList.add( lists[ i ] );
+			if ( lists[ i ] != null )
+			{
+				currList.add( lists[ i ] );
+			}
+		}
+		if ( currList.isEmpty() )
+		{
+			return null;
 		}
 
 		Collections.sort( currList, new NodeComparator() );
 
 		head = currList.getFirst();
-		index = head;
 
-		while ( !isEmptyList( currList ) )
+		while ( !currList.isEmpty() )
 		{
+			if ( index != null )
+			{
+				index.next = currList.getFirst();
+			}
+			index = currList.getFirst();
+
+			currList.removeFirst();
 			if ( index.next != null )
 			{
 				insert = index.next;
 				int limit = currList.size();
 				int value = insert.val;
-				for ( int i = 0; i < limit - 1; i++ )
+				for ( int i = 0; i < limit; i++ )
 				{
-					if ( value < currList.getFirst().val )
+					if ( value <= currList.getFirst().val )
 					{
 						currList.addFirst( insert );
-
 					}
 					else
 					{
 						if ( value > currList.getLast().val )
 						{
 							currList.addLast( insert );
-
 						}
 						else
 						{
-							if ( (value > currList.get( i ).val)
-									&& (value <= currList.get( i ).val) )
+							if ( (i < limit - 1)
+									&& (value > currList.get( i ).val)
+									&& (value <= currList.get( i + 1 ).val) )
 							{
-								currList.add( i, insert );
+								currList.add( i + 1, insert );
 							}
 						}
 					}
 				}
-				index.next = currList.getFirst();
-				index = index.next;
-			}
-			else
-			{
-				currList.removeFirst();
-				index.next = currList.getFirst();
-				index = index.next;
 			}
 		}
 
@@ -75,15 +79,15 @@ public class MergeKSortedLists
 	{
 		int[] a =
 		{
-				1, 3, 5, 7, 9,
+				-1, 1,
 		};
 		int[] b =
 		{
-				2, 4, 6, 8, 10,
+				-3, 1, 4,
 		};
 		int[] c =
 		{
-				15, 16, 17, 18,
+				-2, -1, 0, 2
 		};
 		int[] d =
 		{
@@ -95,24 +99,17 @@ public class MergeKSortedLists
 		ListNode lc = generateList( c );
 		ListNode ld = generateList( d );
 
+		printList( la );
+		printList( lb );
+		printList( lc );
+		printList( ld );
+
 		ListNode[] list1 =
 		{
-				la, lb, lc, ld
+				la, lb, lc,
 		};
 
 		printList( mergeKLists( list1 ) );
-	}
-
-	private boolean isEmptyList( LinkedList< ListNode > list )
-	{
-		for ( ListNode i : list )
-		{
-			if ( i != null )
-			{
-				return false;
-			}
-		}
-		return true;
 	}
 
 	private void printList( ListNode list )
@@ -120,7 +117,7 @@ public class MergeKSortedLists
 		ListNode index = list;
 		while ( index != null )
 		{
-			System.out.print( index.val );
+			System.out.print( index.val + " " );
 			index = index.next;
 		}
 		System.out.println();
