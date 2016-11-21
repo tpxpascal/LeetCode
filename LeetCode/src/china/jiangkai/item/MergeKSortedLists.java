@@ -51,12 +51,14 @@ public class MergeKSortedLists
 					if ( value <= currList.getFirst().val )
 					{
 						currList.addFirst( insert );
+						break;
 					}
 					else
 					{
 						if ( value > currList.getLast().val )
 						{
 							currList.addLast( insert );
+							break;
 						}
 						else
 						{
@@ -65,6 +67,7 @@ public class MergeKSortedLists
 									&& (value <= currList.get( i + 1 ).val) )
 							{
 								currList.add( i + 1, insert );
+								break;
 							}
 						}
 					}

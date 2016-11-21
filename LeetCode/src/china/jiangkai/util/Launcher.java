@@ -50,7 +50,9 @@ public class Launcher
 		// mtsl.debug();
 		// GenerateParentheses gp = new GenerateParentheses();
 		// gp.debug();
-		MergeKSortedLists mksl = new MergeKSortedLists();
-		mksl.debug();
+		// MergeKSortedLists mksl = new MergeKSortedLists();
+		// mksl.debug();
+		SwapNodesInPairs snip = new SwapNodesInPairs();
+		snip.debug();
 	}
 }
