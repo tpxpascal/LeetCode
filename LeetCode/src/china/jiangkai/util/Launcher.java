@@ -52,7 +52,18 @@ public class Launcher
 		// gp.debug();
 		// MergeKSortedLists mksl = new MergeKSortedLists();
 		// mksl.debug();
-		SwapNodesInPairs snip = new SwapNodesInPairs();
-		snip.debug();
+		// SwapNodesInPairs snip = new SwapNodesInPairs();
+		// snip.debug();
+		// ReverseNodesInKGroup rnikg = new ReverseNodesInKGroup();
+		// rnikg.debug();
+		// RemoveDuplicateFromSortedArray rdfsa = new
+		// RemoveDuplicateFromSortedArray();
+		// rdfsa.debug();
+		// RemoveElement re = new RemoveElement();
+		// re.debug();
+		// ImplementStrStr iss = new ImplementStrStr();
+		// iss.debug();
+		DivideTwoInteger dti = new DivideTwoInteger();
+		dti.debug();
 	}
 }
