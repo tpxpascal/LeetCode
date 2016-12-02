@@ -63,7 +63,13 @@ public class Launcher
 		// re.debug();
 		// ImplementStrStr iss = new ImplementStrStr();
 		// iss.debug();
-		DivideTwoInteger dti = new DivideTwoInteger();
-		dti.debug();
+		// DivideTwoInteger dti = new DivideTwoInteger();
+		// dti.debug();
+		// NextPermutation np = new NextPermutation();
+		// np.debug();
+		// LongestValidParenthese lvp = new LongestValidParenthese();
+		// lvp.debug();
+		SearchInRotatedSortedArray sirsa = new SearchInRotatedSortedArray();
+		sirsa.debug();
 	}
 }
