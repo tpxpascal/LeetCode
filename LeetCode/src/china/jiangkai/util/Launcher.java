@@ -69,7 +69,11 @@ public class Launcher
 		// np.debug();
 		// LongestValidParenthese lvp = new LongestValidParenthese();
 		// lvp.debug();
-		SearchInRotatedSortedArray sirsa = new SearchInRotatedSortedArray();
-		sirsa.debug();
+		// SearchInRotatedSortedArray sirsa = new SearchInRotatedSortedArray();
+		// sirsa.debug();
+		// SearchForARange sfr = new SearchForARange();
+		// sfr.debug();
+		SearchInsertPosition sip = new SearchInsertPosition();
+		sip.debug();
 	}
 }
