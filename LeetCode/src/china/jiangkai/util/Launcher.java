@@ -73,7 +73,15 @@ public class Launcher
 		// sirsa.debug();
 		// SearchForARange sfr = new SearchForARange();
 		// sfr.debug();
-		SearchInsertPosition sip = new SearchInsertPosition();
-		sip.debug();
+		// SearchInsertPosition sip = new SearchInsertPosition();
+		// sip.debug();
+		// ValidSudoku vs = new ValidSudoku();
+		// vs.debug();
+		// CountAndSay cas = new CountAndSay();
+		// cas.debug();
+		// FirstMissingPositive fmp = new FirstMissingPositive();
+		// fmp.debug();
+		TrappingRainWater trw = new TrappingRainWater();
+		trw.debug();
 	}
 }
