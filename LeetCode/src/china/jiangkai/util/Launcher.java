@@ -81,7 +81,11 @@ public class Launcher
 		// cas.debug();
 		// FirstMissingPositive fmp = new FirstMissingPositive();
 		// fmp.debug();
-		TrappingRainWater trw = new TrappingRainWater();
-		trw.debug();
+		// TrappingRainWater trw = new TrappingRainWater();
+		// trw.debug();
+		// MultiplyStrings ms = new MultiplyStrings();
+		// ms.debug();
+		JumpGame2 jg2 = new JumpGame2();
+		jg2.debug();
 	}
 }
