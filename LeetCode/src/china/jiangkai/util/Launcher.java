@@ -85,7 +85,17 @@ public class Launcher
 		// trw.debug();
 		// MultiplyStrings ms = new MultiplyStrings();
 		// ms.debug();
-		JumpGame2 jg2 = new JumpGame2();
-		jg2.debug();
+		// JumpGame2 jg2 = new JumpGame2();
+		// jg2.debug();
+		// Permutations p = new Permutations();
+		// p.debug();
+		// Permutations2 p2 = new Permutations2();
+		// p2.debug();
+		// RotateImage ri = new RotateImage();
+		// ri.debug();
+		// GroupAnagrams ga = new GroupAnagrams();
+		// ga.debug();
+		Power p = new Power();
+		p.debug();
 	}
 }
