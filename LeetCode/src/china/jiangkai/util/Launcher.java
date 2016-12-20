@@ -95,7 +95,13 @@ public class Launcher
 		// ri.debug();
 		// GroupAnagrams ga = new GroupAnagrams();
 		// ga.debug();
-		Power p = new Power();
-		p.debug();
+		// Power p = new Power();
+		// p.debug();
+		// MaximumSubarray ms = new MaximumSubarray();
+		// ms.debug();
+		// SpiralMatrix sm = new SpiralMatrix();
+		// sm.debug();
+		JumpGame jg = new JumpGame();
+		jg.debug();
 	}
 }
