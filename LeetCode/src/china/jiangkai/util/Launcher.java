@@ -101,7 +101,15 @@ public class Launcher
 		// ms.debug();
 		// SpiralMatrix sm = new SpiralMatrix();
 		// sm.debug();
-		JumpGame jg = new JumpGame();
-		jg.debug();
+		// JumpGame jg = new JumpGame();
+		// jg.debug();
+		// MergeInterval mi = new MergeInterval();
+		// mi.debug();
+		// InsertInterval ii = new InsertInterval();
+		// ii.debug();
+		// LengthOfLastWord lolw = new LengthOfLastWord();
+		// lolw.debug();
+		SpiralMatrix2 sm2 = new SpiralMatrix2();
+		sm2.debug();
 	}
 }
