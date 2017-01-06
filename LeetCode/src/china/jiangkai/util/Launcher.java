@@ -109,7 +109,13 @@ public class Launcher
 		// ii.debug();
 		// LengthOfLastWord lolw = new LengthOfLastWord();
 		// lolw.debug();
-		SpiralMatrix2 sm2 = new SpiralMatrix2();
-		sm2.debug();
+		// SpiralMatrix2 sm2 = new SpiralMatrix2();
+		// sm2.debug();
+		// PermutationSequence ps = new PermutationSequence();
+		// ps.debug();
+		// RotateList rl = new RotateList();
+		// rl.debug();
+		UniquePath up = new UniquePath();
+		up.debug();
 	}
 }
