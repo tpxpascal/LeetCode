@@ -44,12 +44,39 @@ public class UniquePath
 		return result;
 	}
 
+	public long uniquePaths3( int m, int n )
+	{
+		long result = 0;
+
+		long[][] map = new long[ m ][ n ];
+
+		for ( int i = 0; i < m; i++ )
+		{
+			map[ i ][ 0 ] = 1;
+		}
+		for ( int i = 0; i < n; i++ )
+		{
+			map[ 0 ][ i ] = 1;
+		}
+
+		for ( int i = 1; i < m; i++ )
+		{
+			for ( int j = 1; j < n; j++ )
+			{
+				map[ i ][ j ] = map[ i - 1 ][ j ] + map[ i ][ j - 1 ];
+			}
+		}
+
+		result = map[ m - 1 ][ n - 1 ];
+		return result;
+	}
+
 	public void debug()
 	{
-		System.out.println( uniquePaths2( 2, 2 ) );
-		System.out.println( uniquePaths2( 3, 3 ) );
-		System.out.println( uniquePaths2( 2, 3 ) );
-		System.out.println( uniquePaths2( 100, 100 ) );
+		System.out.println( uniquePaths3( 2, 2 ) );
+		System.out.println( uniquePaths3( 3, 3 ) );
+		System.out.println( uniquePaths3( 2, 3 ) );
+		System.out.println( uniquePaths3( 100, 100 ) );
 	}
 
 	class Position

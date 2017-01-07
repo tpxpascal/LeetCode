@@ -115,7 +115,15 @@ public class Launcher
 		// ps.debug();
 		// RotateList rl = new RotateList();
 		// rl.debug();
-		UniquePath up = new UniquePath();
-		up.debug();
+		// UniquePath up = new UniquePath();
+		// up.debug();
+		// UniquePath2 up2 = new UniquePath2();
+		// up2.debug();
+		// MinimumPathSum mps = new MinimumPathSum();
+		// mps.debug();
+		// ValidNumber vn = new ValidNumber();
+		// vn.debug();
+		PlusOne po = new PlusOne();
+		po.debug();
 	}
 }
