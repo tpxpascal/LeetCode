@@ -123,7 +123,9 @@ public class Launcher
 		// mps.debug();
 		// ValidNumber vn = new ValidNumber();
 		// vn.debug();
-		PlusOne po = new PlusOne();
-		po.debug();
+		// PlusOne po = new PlusOne();
+		// po.debug();
+		AddBinary ab = new AddBinary();
+		ab.debug();
 	}
 }
